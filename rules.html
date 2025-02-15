@@ -875,4 +875,10 @@
         <p>&copy; 2024 StrategyMC. All rights reserved.</p>
     </footer>
 </body>
+
+        <script>
+        if (window.location.pathname.endsWith(".html")) {
+            window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+        }
+    </script>
 </html>
