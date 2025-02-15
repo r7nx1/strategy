@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyMC - Ultimate Minecraft Gaming Experience</title>
+    <link rel="stylesheet" href="Addons/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">StrategyMC</a>
+            <div class="nav-links">
+                <a href="store.strategymc.xyz" class="nav-link">Store</a>
+                <a href="apply.html" class="nav-link">Get a Job</a>
+                <a href="rules.html" class="nav-link">Rules</a>
+                <a href="policies.html" class="nav-link">Policies</a>
+                <a href="index.html#discord" class="nav-link">Discord</a>
+              </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="server-title">StrategyMC</h1>
+            <p class="description">
+                Experience the ultimate Minecraft gaming adventure! Join our premium server featuring competitive game modes, epic battles, and an amazing community.
+            </p>
+            <div class="cta-buttons">
+                <a href="#how-to-join" class="cta-button">Start Playing</a>
+                <a href="#game-modes" class="cta-button secondary">Explore Games</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="game-modes" class="game-modes">
+        <h2 class="section-title">Game Modes</h2>
+        <div class="game-modes-grid">
+            <div class="game-mode-card">
+                <h3>Bedwars</h3>
+                <p>Protect your bed and destroy others! Team up or go solo in our enhanced Bedwars experience with custom maps and special power-ups.</p>
+            </div>
+            <div class="game-mode-card">
+                <h3>Practice</h3>
+                <p>Hone your PvP skills with our advanced practice system. Multiple game modes, custom kits, and competitive rankings await!</p>
+            </div>
+            <div class="game-mode-card">
+                <h3>RedstonePvP</h3>
+                <p>Master the art of Redstone combat! Use advanced redstone mechanisms and traps in intense PvP battles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Server Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Custom Economy</h3>
+                <p>Unique economy system with player shops, auctions, and special rewards</p>
+            </div>
+            <div class="feature-card">
+                <h3>Ranks & Perks</h3>
+                <p>Exclusive ranks with special abilities, cosmetics, and privileges</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Enchants</h3>
+                <p>Discover powerful custom enchantments to enhance your gear</p>
+            </div>
+            <div class="feature-card">
+                <h3>Daily Rewards</h3>
+                <p>Log in daily to claim amazing rewards and special items</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-join" class="how-to-join">
+        <h2 class="section-title">How to Join</h2>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Launch Minecraft</h3>
+                <p>Start Minecraft Java Edition (1.8 - 1.20)</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Add Server</h3>
+                <p>Click 'Multiplayer' → 'Add Server' and enter our server address</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Connect & Play</h3>
+                <p>Click 'Join Server' and start your adventure!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="discord" class="discord-section">
+        <h2 class="section-title">Join Our Discord</h2>
+        <div class="discord-container">
+            <p class="description">
+                Connect with our amazing community, stay updated with server news, and get instant support!
+            </p>
+            <div class="discord-features">
+                <div class="discord-feature">
+                    <h3>Community Chat</h3>
+                    <p>Connect with players and make new friends</p>
+                </div>
+                <div class="discord-feature">
+                    <h3>Support</h3>
+                    <p>Get instant help from our staff team</p>
+                </div>
+                <div class="discord-feature">
+                    <h3>Announcements</h3>
+                    <p>Stay updated with events and updates</p>
+                </div>
+            </div>
+            <a href="https://dsc.gg/strategymc" class="discord-button" target="_blank" rel="noopener noreferrer">
+                Join Discord
+            </a>
+            
+        </div>
+    </section>
+
+    <section id="server-info" class="server-info">
+        <h2 class="section-title">Join Our Server</h2>
+        <div class="server-address" id="serverAddress">
+            mc.strategymc.xyz
+        </div>
+        <p class="version-info">Compatible with Minecraft Java Edition 1.8 - 1.20</p>
+        <p>Join thousands of players already enjoying our unique gaming experience!</p>
+    </section>
+
+    <div class="copy-notification" id="copyNotification">
+        Server address copied successfully!
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 StrategyMC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('serverAddress').addEventListener('click', function() {
+            navigator.clipboard.writeText('mc.strategymc.xyz');
+            const notification = document.getElementById('copyNotification');
+            notification.classList.add('show');
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
